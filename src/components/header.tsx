@@ -20,20 +20,32 @@ export default function Header() {
 
       </div>
 
-      <a
-        href="https://twitter.com/jeffrey75755118"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <Image
-          alt="Vercel Icon"
-          src="/twitter.svg"
-          className="sm:w-8 sm:h-[27px] w-8 h-[28px]"
-          width={32}
-          height={28}
-        />
-      </a>
-
+      <div className="flex">
+        <a
+          href="https://twitter.com/jeffrey75755118"
+          target="_blank"
+          rel="noreferrer"
+          className="mr-2"
+        >
+          <Image
+            alt="twitter Icon"
+            src="/twitter.png"
+            width={32}
+            height={32}
+          />
+        </a>
+        <a
+          href="https://github.com/Jeffrey-mu/flex_box"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Image
+            alt="github Icon"
+            src="/github.png"
+            width={32}
+            height={32}
+          />
+        </a></div>
     </header>
   );
 }
