@@ -29,7 +29,7 @@ export default function Example() {
   const [direction, setDirection] = useState(directions[0])
   const [justifyContent, setjustifyContent] = useState(justifyContents[0])
   const [wrap, setWrap] = useState(wraps[0])
-  const [wrapState, setSrapState] = useState(false)
+  const [wrapState, setWrapState] = useState(false)
 
 
   return (
@@ -38,7 +38,7 @@ export default function Example() {
         <Header />
         <div className="mt-5">
           <div className='flex'>
-            <Listbox className="w-[200px]" value={direction} onChange={(e) => { setSrapState(false); setDirection(e) }}>
+            <Listbox className="w-[200px]" value={direction} onChange={(e) => { setWrapState(false); setDirection(e) }}>
               <div className="relative mt-1">
                 <Listbox.Button className="relative w-full cursor-default rounded-lg bg-white py-2 pl-3 pr-10 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
                   <span className="block truncate">{direction.name}</span>
@@ -86,7 +86,7 @@ export default function Example() {
                 </Transition>
               </div>
             </Listbox>
-            <Listbox className="w-[200px] ml-2" value={justifyContent} onChange={(e) => { setSrapState(false); setjustifyContent(e) }} >
+            <Listbox className="w-[200px] ml-2" value={justifyContent} onChange={(e) => { setWrapState(false); setjustifyContent(e) }} >
               <div className="relative mt-1">
                 <Listbox.Button className="relative w-full cursor-default rounded-lg bg-white py-2 pl-3 pr-10 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
                   <span className="block truncate">{justifyContent.name}</span>
@@ -134,7 +134,7 @@ export default function Example() {
                 </Transition>
               </div>
             </Listbox>
-            <Listbox className="w-[200px] ml-2" value={wrap} onChange={(e) => { setSrapState(true); setWrap(e) }}>
+            <Listbox className="w-[200px] ml-2" value={wrap} onChange={(e) => { setWrapState(true); setWrap(e) }}>
               <div className="relative mt-1">
                 <Listbox.Button className="relative w-full cursor-default rounded-lg bg-white py-2 pl-3 pr-10 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
                   <span className="block truncate">{wrap.name}</span>
