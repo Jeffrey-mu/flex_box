@@ -34,7 +34,7 @@ export default function Example() {
 
   return (
     <>
-      <div className='max-w-5xl mx-auto min-h-screen'>
+      <div className='max-w-5xl mx-auto'>
         <Header />
         <div className="mt-5">
           <div className='flex'>
