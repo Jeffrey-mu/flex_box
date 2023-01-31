@@ -30,8 +30,8 @@ export default function Header() {
           <Image
             alt="twitter Icon"
             src="/twitter.png"
-            width={32}
-            height={32}
+            width={25}
+            height={25}
           />
         </a>
         <a
@@ -42,8 +42,8 @@ export default function Header() {
           <Image
             alt="github Icon"
             src="/github.png"
-            width={32}
-            height={32}
+            width={25}
+            height={25}
           />
         </a></div>
     </header>
